@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Path aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/components": ["src/shared/components"],
+      "@/components/*": ["src/shared/components/*"],
+      "@/hooks": ["src/shared/hooks"],
+      "@/hooks/*": ["src/shared/hooks/*"],
+      "@/lib": ["src/shared/lib"],
+      "@/lib/*": ["src/shared/lib/*"],
+      "@/types": ["src/shared/types"],
+      "@/types/*": ["src/shared/types/*"],
+      "@/utils": ["src/shared/utils"],
+      "@/utils/*": ["src/shared/utils/*"],
+      "@/styles": ["src/shared/styles"],
+      "@/styles/*": ["src/shared/styles/*"],
+      "@/store/*": ["src/store/*"],
+      "@/features/*": ["src/features/*"],
+      "@/config/*": ["src/config/*"],
+      "@/*": ["src/*"]
+    },
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+*.log
+coverage/
+.DS_Store
+Thumbs.db
+.docker/*
+# Runtime and test artifacts
+test-results/
+playwright-report/
+public/uploads/
